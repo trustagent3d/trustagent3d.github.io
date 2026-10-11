@@ -1,0 +1,19 @@
+# macOS and editor temporary files
+.DS_Store
+._*
+*~
+*.swp
+*.swo
+
+# Python cache from local maintenance scripts
+__pycache__/
+*.py[cod]
+
+# Local preview and temporary output
+/tmp/
+*.log
+
+# Local environment settings
+.env
+.env.*
+!.env.example
