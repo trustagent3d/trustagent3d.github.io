@@ -1,8 +1,10 @@
 # TrustAgent3D website
 
-Static workshop homepage and call for papers, aligned with `../proposal/main.tex`.
+Uses the HTML layout, Bootstrap dependencies, stylesheet, and scripts from the
+3D Geometry Generation for Scientific Computing `website_cvpr` template.
+Workshop content is adapted from `../proposal/main.tex`.
 
-## Preview
+## Local preview
 
 Run from this directory:
 
@@ -10,14 +12,16 @@ Run from this directory:
 python3 -m http.server 8765 --bind 127.0.0.1
 ```
 
-Open http://127.0.0.1:8765/. Both pages also work directly from disk; navigation and essential content do not require JavaScript or a CDN.
+Open http://127.0.0.1:8765/. Use HTTP because `load-templates.js` fetches the shared
+header, navigation, and footer. Bootstrap and jQuery load from the template's CDNs.
 
-## Edit
+## Editing
 
-- `index.html`: workshop scope, research context, topics, program, organizers, and participation.
-- `cfp.html`: submission policy, dates, review criteria, ethics, and contacts.
-- `header.html`, `navbar.html`, `footer.html`: shared fragments. After editing, run `python3 sync_templates.py` to embed them in both pages.
-- `style.css`, `custom.js`: responsive styles, mobile navigation, and back-to-top behavior.
-- `images/`: organizer portraits.
+- `index.html`: description, topics, speakers, call for papers, schedule, organizers.
+- `cfp.html`: submission information and contacts.
+- `header.html`, `navbar.html`, `footer.html`: shared fragments loaded at runtime.
+- `style.css`, `custom.js`, `load-templates.js`: unchanged from the reference template.
 
-Keep content and dates consistent with the proposal. Speakers remain empty. The workshop is proposed, dates are tentative, and the submission portal has not been announced. Keep this status accurate and retain `noindex, nofollow` until the workshop is ready for public launch. No hosting registration or deployment is configured here.
+Keep HTML indented and readable. Speakers remain empty. The workshop is proposed;
+dates are tentative and no submission portal has been announced. The reference
+workshop's analytics property and past-edition links are not reused.

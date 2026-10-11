@@ -1,16 +1,23 @@
-<nav class="site-nav" aria-label="Main navigation">
-  <div class="container nav-inner">
-    <a class="brand" href="index.html">TrustAgent3D</a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" hidden>
-      Menu <span aria-hidden="true">+</span>
-    </button>
-    <ul id="nav-links">
-      <li><a href="index.html#about">About</a></li>
-      <li><a href="index.html#topics">Topics</a></li>
-      <li><a href="cfp.html">Call for papers</a></li>
-      <li><a href="index.html#schedule">Program</a></li>
-      <li><a href="index.html#speakers">Speakers</a></li>
-      <li><a href="index.html#organizers">Organizers</a></li>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="index.html#topics">Topics</a></li>
+      <li class="nav-item"><a class="nav-link" href="index.html#speakers">Speakers</a></li>
+      <li class="nav-item"><a class="nav-link" href="index.html#cfp">Call for Papers</a></li>
+      <li class="nav-item"><a class="nav-link" href="index.html#schedule">Schedule</a></li>
+      <li class="nav-item"><a class="nav-link" href="index.html#organizers">Organizers</a></li>
+      <li class="nav-item dropdown">
+        <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="previousDropdown" role="button">
+          Workshops by Year
+        </a>
+        <div aria-labelledby="previousDropdown" class="dropdown-menu">
+          <a class="dropdown-item" href="index.html">CVPR 2027 (Proposed First Edition)</a>
+        </div>
+      </li>
     </ul>
   </div>
 </nav>
