@@ -6,7 +6,7 @@
     <meta content="noindex, nofollow" name="robots"/>
     <title>
       TrustAgent3D at CVPR 2027 | Trustworthy Agentic 3D: Addressing Attacks, Failures, and
-      Hallucinations
+      Hallucinations in Agentic 3D Modeling
     </title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="./style.css?v=2027-agentic" media="all" rel="stylesheet" type="text/css">
@@ -29,14 +29,13 @@
             execution. TrustAgent3D brings together vision, graphics, foundation-model, and security
             researchers to study trustworthy agentic modeling. We prioritize malicious manipulation
             and hallucination, alongside reliable tool use and independent verification. Through
-            invited talks, contributed papers, posters, and a failure-analysis clinic, participants
-            will develop evaluation practices connecting scene fidelity, instruction integrity, task
-            completion, and recovery across reconstruction, generation, and modeling workflows.
+            invited talks, contributed orals, and posters, participants will develop practices
+            connecting scene fidelity, prompt integrity, and recovery across reconstruction,
+            generation, and modeling workflows.
           </p>
           <p>
-            <strong>What do we mean by agentic 3D?</strong> Systems that select modeling actions and revise scene
-            representations using feedback. Our core scope is agent-driven 3D/4D modeling, with
-            embodied navigation and robot control as adjacent applications.
+            <strong>What do we mean by agentic 3D?</strong> Systems that select modeling actions and revise
+            scene representations using feedback.
           </p>
           <p>
             Our central question is: <strong>what evidence should an agent require before trusting a 3D
@@ -56,8 +55,6 @@
               acquire information, abstain, or recover when scene claims are unsupported?
             </li>
           </ul>
-          <p>
-          </p>
         </section>
         <section class="Topics" id="topics">
           <h2>Topics</h2>
@@ -69,7 +66,7 @@
             </li>
             <li>
               <strong>Reliable 3D/4D reconstruction and generation.</strong> Multi-view consistency, scale and
-              coordinate checks, object identity, temporal fidelity, and independent validation of
+              coordinate checks, object identity, temporal fidelity, and independent validation or formal verification of
               scene programs.
             </li>
             <li>
@@ -78,9 +75,9 @@
               task trajectories.
             </li>
             <li>
-              <strong>Grounded scene understanding.</strong> Hallucinated objects, attributes, spatial relations,
-              and action preconditions; uncertainty, active observation, abstention, and
-              distinguishing observed from generated content.
+              <strong>Grounded scene understanding.</strong> Hallucination of objects, attributes, spatial relations,
+              and action preconditions; uncertainty, active observation, abstention, and the separation
+              of observed from generated content.
             </li>
           </ul>
         </section>
@@ -91,14 +88,15 @@
           <h2>Call for Papers</h2>
           <p>
             We invite methods, systems, benchmarks, and diagnostic studies on trustworthy agentic
-            3D/4D reconstruction, generation, and modeling. We welcome informative negative results
-            and carefully scoped preliminary studies; novelty alone will not substitute for
-            evidence.
+            3D/4D reconstruction, generation, and modeling.
           </p>
           <p>
-	  The workshop is <strong>non-archival</strong>. Papers receive double-blind peer review. Accepted papers are presented as posters, with selected papers featured in contributed talks, and are shared through OpenReview. They do not appear in IEEE/CVF proceedings.
+          The workshop is <strong>non-archival</strong>. Each paper receives three double-blind OpenReview
+            reviews. All accepted papers receive poster slots; three receive oral talks based on
+            quality and topic coverage. Papers are shared through OpenReview and do not appear in
+            IEEE/CVF proceedings.
           </p>
-	  <p>
+          <p>
           <span>
             We provide more submission details: <b><a href="./cfp.html" rel="noopener noreferrer" target="_blank">Guidance for TrustAgent3D CFP at CVPR 2027</a></b>.
           </span>
@@ -106,7 +104,7 @@
           <span>
             <b>OpenReview submission portal</b>: <a href="https://openreview.net/group?id=thecvf.com/CVPR/2027/Workshop/TrustAgent3D" target="_blank" rel="noopener noreferrer">https://openreview.net/group?id=thecvf.com/CVPR/2027/Workshop/TrustAgent3D</a>
           </span>
-	  </p>
+          </p>
           <div class="important-dates">
             <h3>Important Dates (Tentative)</h3>
             <p>All submission deadlines are at 23:59 Anywhere on Earth (AoE).</p>
@@ -117,7 +115,7 @@
               <li><strong>Reviewer deadline:</strong> March 12, 2027</li>
               <li><strong>Acceptance/rejection notification:</strong> March 22, 2027</li>
               <li>
-                <strong>Accepted archival paper author metadata submission:</strong> March 29, 2027
+                <strong>Accepted non-archival paper author metadata submission:</strong> March 29, 2027
               </li>
               <li><strong>Camera-ready submission:</strong> April 23, 2027</li>
               <li><strong>Workshop date:</strong> June 20 or 21, 2027, assigned by CVPR</li>
@@ -127,9 +125,9 @@
         <section id="schedule">
           <h2>Schedule</h2>
           <p>
-            The preliminary half-day program runs from <strong>8:00 am to 12:30 pm</strong>, Seattle local time, on
-            June 20 or 21, 2027, assigned by CVPR. Invited-talk slots are provisional and include
-            questions.
+            The preliminary half-day program runs from <strong>8:00 am to 12:30 pm</strong> or
+            <strong>12:30 pm to 5:00 pm</strong>, Seattle local time, on June 20 or 21, 2027, assigned by CVPR.
+            Each invited talk lasts 35 minutes including questions.
           </p>
           <div class="table-responsive">
             <table class="table table-striped">
@@ -141,50 +139,44 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>08:00-08:10</td>
+                  <td>08:00-08:10 or 12:30-12:40</td>
                   <td>Opening remarks and trustworthy agentic 3D agenda</td>
                 </tr>
                 <tr>
-                  <td>08:10-08:40</td>
-                  <td>Invited talk 1: prompt injection and jailbreaks in 3D toolchains</td>
+                  <td>08:10-08:45 or 12:40-13:15</td>
+                  <td>Invited Talk 1</td>
                 </tr>
                 <tr>
-                  <td>08:40-09:10</td>
-                  <td>Invited talk 2: reliable reconstruction and graphics tool use</td>
+                  <td>08:45-09:20 or 13:15-13:50</td>
+                  <td>Invited Talk 2</td>
                 </tr>
                 <tr>
-                  <td>09:10-09:40</td>
+                  <td>09:20-09:50 or 13:50-14:20</td>
                   <td>Three contributed talks, 10 minutes each including questions</td>
                 </tr>
                 <tr>
-                  <td>09:40-10:25</td>
+                  <td>09:50-10:40 or 14:20-15:10</td>
                   <td>Poster session and coffee break</td>
                 </tr>
                 <tr>
-                  <td>10:25-10:55</td>
-                  <td>Invited talk 3: grounded scene understanding and hallucination</td>
+                  <td>10:40-11:15 or 15:10-15:45</td>
+                  <td>Invited Talk 3</td>
                 </tr>
                 <tr>
-                  <td>10:55-11:25</td>
-                  <td>Three contributed talks, 10 minutes each including questions</td>
+                  <td>11:15-11:50 or 15:45-16:20</td>
+                  <td>Invited Talk 4</td>
                 </tr>
                 <tr>
-                  <td>11:25-12:00</td>
-                  <td>Moderated discussion: what evidence makes a 3D agent trustworthy?</td>
+                  <td>11:50-12:25 or 16:20-16:55</td>
+                  <td>Invited Talk 5</td>
                 </tr>
                 <tr>
-                  <td>12:00-12:20</td>
-                  <td>Small-group failure-analysis clinic</td>
-                </tr>
-                <tr>
-                  <td>12:20-12:30</td>
-                  <td>Group reports, reporting checklist, and closing</td>
+                  <td>12:25-12:30 or 16:55-17:00</td>
+                  <td>Closing</td>
                 </tr>
               </tbody>
             </table>
           </div>
-          <p>
-          </p>
         </section>
         <section class="Organizers" id="organizers">
           <h2>Organizers</h2>
