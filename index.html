@@ -19,8 +19,9 @@
         <section class="Description" id="home">
           <h2>Description</h2>
           <p class="scope-statement">
-            This workshop focuses on trustworthy agentic 3D/4D reconstruction, generation, and modeling, with an emphasis on
-            semantic attacks, hallucination, reliable tool use, and formal verification.
+            Trustworthy agentic 3D/4D reconstruction, generation, and modeling, with an emphasis on
+            malicious manipulation, hallucination, reliable tool use, independent checks, and formal
+            verification.
           </p>
           <p>
             LLM and multimodal agents increasingly reconstruct, generate, and edit 3D/4D models
@@ -34,8 +35,40 @@
             generation, and modeling workflows.
           </p>
           <p>
-            <strong>What do we mean by agentic 3D?</strong> Systems that select modeling actions and revise
-            scene representations using feedback.
+            Large language models (LLMs) and multimodal agents are turning 3D/4D reconstruction,
+            generation, and editing into iterative tool-using workflows. We thus term systems that
+            select modeling actions and revise scene representations using feedback as <strong>“agentic
+            3D”</strong>. For example, VIGA interleaves code generation, rendering, and visual inspection
+            <a href="https://arxiv.org/abs/2601.11109">[VIGA]</a>; LEGO-Anything reconstructs images as editable Blender programs
+            <a href="https://arxiv.org/abs/2609.36380">[LEGO-Anything]</a>; Code4Scene evaluates scene construction and precise editing in Unreal
+            Engine <a href="https://arxiv.org/abs/2609.36777">[Code4Scene]</a>; and 4DCodeBench extends programmatic reconstruction to dynamic
+            scenes <a href="https://arxiv.org/abs/2610.03715">[4DCodeBench]</a>. <em>However</em>, their growing capabilities make <strong>trustworthy modeling
+            urgent</strong>: a convincing render can conceal incorrect geometry, unintended edits, or
+            unsupported dynamics.
+          </p>
+          <p>
+            <strong>Malicious manipulation</strong> can redirect these workflows through the information an agent
+            interprets. Semantic prompt injection, jailbreaks, and traditional pixel- or
+            geometry-level attacks are complementary when they expose related modeling failures.
+            PI3D places instruction-bearing objects in 3D environments <a href="https://arxiv.org/abs/2602.07104">[PI3D]</a>, while CHAI studies
+            command hijacking through deceptive visual signs <a href="https://arxiv.org/abs/2510.00181">[CHAI]</a>. BadNAVer demonstrates
+            jailbreak attacks through navigation instructions <a href="https://arxiv.org/abs/2505.12443">[BadNAVer]</a>. Evidence-carrying
+            multimodal agents instead require verified action preconditions in browser and document
+            workflows <a href="https://arxiv.org/abs/2605.19192">[Evidence-carrying multimodal agents]</a>. These studies motivate defenses for
+            scene text, asset metadata, retrieved instructions, and tool responses, but do not
+            establish security for Blender reconstruction.
+          </p>
+          <p>
+            <strong>Hallucination and ordinary task failure</strong> require equally explicit evidence. BlenderGym
+            benchmarks graphics editing and verification <a href="https://arxiv.org/abs/2504.01786">[BlenderGym]</a>; HEAL examines
+            hallucinations under scene-task inconsistencies <a href="https://arxiv.org/abs/2506.15065">[HEAL]</a>; 3D-GRAND introduces grounded
+            scene-language data and hallucination evaluation <a href="https://arxiv.org/abs/2406.05132">[3D-GRAND]</a>; and 3D-VCD mitigates
+            unsupported predictions using contrasting scene representations <a href="https://arxiv.org/abs/2604.08645">[3D-VCD]</a>. Together,
+            they motivate independent geometric checks, evidence-linked scene claims, and reliable
+            completion criteria. Creative generation may intentionally fill unseen regions, but
+            those additions should remain distinguishable from observed geometry. We also welcome
+            formal verification of specified scene properties and tool actions, with explicit
+            assumptions and guarantees.
           </p>
           <p>
             Our central question is: <strong>what evidence should an agent require before trusting a 3D
@@ -66,8 +99,8 @@
             </li>
             <li>
               <strong>Reliable 3D/4D reconstruction and generation.</strong> Multi-view consistency, scale and
-              coordinate checks, object identity, temporal fidelity, and independent validation or formal verification of
-              scene programs.
+              coordinate checks, object identity, temporal fidelity, and independent validation or
+              formal verification of scene programs.
             </li>
             <li>
               <strong>Reliable Blender and 3D tool use.</strong> Execution monitoring, bounded edits, preservation
@@ -75,9 +108,9 @@
               task trajectories.
             </li>
             <li>
-              <strong>Grounded scene understanding.</strong> Hallucination of objects, attributes, spatial relations,
-              and action preconditions; uncertainty, active observation, abstention, and the separation
-              of observed from generated content.
+              <strong>Grounded scene understanding.</strong> Hallucination of objects, attributes, spatial
+              relations, and action preconditions; uncertainty, active observation, abstention, and
+              the separation of observed from generated content.
             </li>
           </ul>
         </section>

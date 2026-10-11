@@ -23,18 +23,32 @@
         </p>
         <h3>Scope</h3>
         <p>
-          LLM and multimodal agents increasingly reconstruct, generate, and edit 3D/4D models
-          through tools such as Blender. Yet their workflows remain vulnerable to semantic prompt
-          injection, jailbreaks, hallucinated geometry, and unsupported claims of successful
-          execution. TrustAgent3D brings together vision, graphics, foundation-model, and security
-          researchers to study trustworthy agentic modeling. We prioritize malicious manipulation
-          and hallucination, alongside reliable tool use and independent verification. Through
-          invited talks, contributed orals, and posters, participants will develop practices
-          connecting scene fidelity, prompt integrity, and recovery across reconstruction,
-          generation, and modeling workflows.
+          We invite research on trustworthy agentic 3D/4D reconstruction, generation, and modeling.
+          Agentic 3D systems select modeling actions and revise scene representations using
+          observations and tool feedback. Our focus connects scene representations, agentic
+          frameworks, and tool calls, including workflows using Blender and other graphics tools.
         </p>
         <p>
-          See the <a href="index.html#topics">full topic list</a>.
+          <strong>Malicious manipulation.</strong> We prioritize malicious manipulation and hallucination alongside
+          reliable tool use and independent verification. Semantic prompt injection, jailbreaks, and
+          traditional pixel- or geometry-level attacks are complementary when they expose related
+          modeling failures. Relevant attack surfaces include scene text, asset metadata, retrieved
+          instructions, tool responses, and poisoned scene memory; defenses should preserve
+          legitimate task completion.
+        </p>
+        <p>
+          <strong>Hallucination, task failure, and verification.</strong> We welcome independent geometric and
+          tool-state checks, evidence-linked scene claims, reliable completion criteria, and formal
+          verification with explicit assumptions and guarantees. Topics include multi-view and
+          temporal consistency, bounded edits, preservation of unaffected geometry, stale-state
+          detection, rollback, uncertainty, active observation, and abstention. Generated content
+          should remain distinguishable from observed geometry.
+        </p>
+        <p>
+          The central question is what evidence an agent should require before trusting a 3D scene
+          claim, executing an edit, or reporting success. Evaluation should connect scene fidelity,
+          prompt integrity, and recovery, and assess attack resistance alongside benign task
+          completion, false rejection, and computational cost. See the <a href="index.html#topics">full topic list</a>.
         </p>
         <h3>Publication and format</h3>
         <p>
